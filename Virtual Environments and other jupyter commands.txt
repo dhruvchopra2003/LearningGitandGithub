@@ -1,0 +1,20 @@
+creating a new virtual environment for jupyter lab (ignore these < >)
+1. python -m venv <venv name>
+2. .\<venv name>\Scripts\activate
+3. pip install ipykernel (check with pip list if it's already installed)
+4. python -m ipykernel install --name=<venv name>
+
+-> deleting a virtual environment:
+	jupyter kernelspec uninstall <kernel name>
+
+
+CREATING AN ENVIRONMENT FOR TENSORFLOW GPU
+1. conda create -y --name=<name> python=3.9
+2. conda activate <name>
+3. pip install tensorflow==2.10
+4. pip install ipykernel
+5. python -m ipykernel install --user --name <name> --display-name "Your Name Here"
+
+
+OPENING NOTEBOOKS SAVED IN DESKTOP:
+	jupyter notebook --notebook-dir=D:/
